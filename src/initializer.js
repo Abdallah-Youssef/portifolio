@@ -14,7 +14,7 @@ export default function run() {
         alpha: true
     })
 
-    renderer.setClearColor( 0x0D0208);
+    renderer.setClearColor(0x0D0208);
     // renderer.setClearColor( 0xFF0000);
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(window.innerWidth, window.innerHeight)
@@ -29,19 +29,22 @@ export default function run() {
     const gridHelper = new THREE.GridHelper(100, 100)
     scene.add(gridHelper)
 
-    const controls = new FirstPersonControls(camera, renderer.domElement)
-    controls.lookSpeed = 0.15
-    controls.lookVertical = false
-    controls.movementSpeed = 3
-    controls.domElement.addEventListener("mousemove", (e) => {
-        if (e.clientX >= 0.4 * window.innerWidth && e.clientX <= 0.6 * window.innerWidth) {
-            controls.activeLook = false
-        } else {
-            controls.activeLook = true
-        }
-    })
-    camera.position.setZ(5)
-    camera.position.setY(1)
+    // const controls = new FirstPersonControls(camera, renderer.domElement)
+    // controls.lookSpeed = 0.15
+    // controls.lookVertical = false
+    // controls.movementSpeed = 3
+    // controls.domElement.addEventListener("mousemove", (e) => {
+    //     if (e.clientX >= 0.4 * window.innerWidth && e.clientX <= 0.6 * window.innerWidth) {
+    //         controls.activeLook = false
+    //     } else {
+    //         controls.activeLook = true
+    //     }
+    // })
+    camera.position.setZ(6)
+    camera.position.setY(5)
+    camera.rotateY(0.7)
+    camera.rotateX(-0.5)
+
 
     // Objects and animation
     const loader = new GLTFLoader();
@@ -59,21 +62,29 @@ export default function run() {
 
 
 
-    let bits = Array(250).fill().map(() => new Bit(scene))
+    let bits = Array(200).fill().map(() => new Bit(scene))
 
 
     let lt = new Date()
+
+
+
+
     function animate() {
         var now = new Date(),
             secs = (now - lt) / 1000;
         lt = now;
+
+        // const canvas = renderer.domElement;
+        // // look up the size the canvas is being displayed
+        // canvas.setAttribute("width", "100vw")
 
         requestAnimationFrame(animate)
 
 
 
 
-        if (cube){
+        if (cube) {
             cube.rotation.z += 0.005
             cube.rotation.y += 0.005
             cube.rotation.x += 0.005
@@ -81,7 +92,7 @@ export default function run() {
 
         bits.forEach(bit => bit.update())
 
-        controls.update(1 * secs);
+        // controls.update(1 * secs);
 
         renderer.render(scene, camera)
     }

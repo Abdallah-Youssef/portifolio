@@ -1,0 +1,59 @@
+.story {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00FF41;
+  font-size: 1.2em;
+}
+
+.darkBackground {
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.856);
+  border-radius: 20px;
+  padding: 2em;
+}
+
+.title{
+    font-size: 2.5em;
+    color: #008F11;
+    text-align: center;
+}
+
+.lightGreen {
+  color: #00FF41ca;
+  line-height: 1.7;
+  font-size: 1.2em;
+}
+
+.experienceTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+    min-width: 200;
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.cardTitle{
+    color: rgb(255, 255, 255);
+}
+
+.icon{
+    margin: 0px 0.5em;
+}
+
+a{
+    color: rgb(124, 168, 250);
+}

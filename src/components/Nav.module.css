@@ -1,0 +1,17 @@
+.nav{
+    right: 0;
+    position: absolute;
+    display: flex;
+    width: min-content;
+    margin-left: auto;
+    justify-items: center;
+}
+
+.link{
+    margin-right: 2em;
+    margin-top: 2em;
+    background-color: rgba(1, 63, 4, 0.377);
+    padding: 1em;
+    border-radius: 10px;
+    color: #008F11;
+}

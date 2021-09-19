@@ -1,6 +1,4 @@
-#App{
-    background-color: aqua;
-}
+
 
 #bg{
     position: fixed;
@@ -10,9 +8,8 @@
 
 #main{
     position: absolute;
-    color: whitesmoke;
-    background-color: rgba(105, 105, 105, 0.404);
+    left: 0;
+    right: 0;
+    background-color: rgba(105, 105, 105, 0);
 }
-a {
-    color: hotpink;
-  }
+

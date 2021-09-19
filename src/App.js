@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import './App.css';
-import { Footer } from './Footer';
+import { Footer } from './components/Footer';
+import { Nav } from './components/Nav';
+import { Body } from './components/Body';
 import run from './initializer';
 
 function App() {
@@ -11,8 +13,9 @@ function App() {
     <div id="App">
       <canvas id="bg"></canvas>
       <div id="main">
-        
-        <Footer/>
+        <Nav/>
+        <Body/>
+        <Footer />
       </div>
     </div>
   );
