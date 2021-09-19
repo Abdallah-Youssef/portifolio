@@ -10,7 +10,10 @@ function App() {
   return (
     <div id="App">
       <canvas id="bg"></canvas>
-      <Footer/>
+      <div id="main">
+        
+        <Footer/>
+      </div>
     </div>
   );
 }

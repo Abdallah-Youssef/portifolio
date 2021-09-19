@@ -7,3 +7,12 @@
     top: 0;
     left: 0;
 }
+
+#main{
+    position: absolute;
+    color: whitesmoke;
+    background-color: rgba(105, 105, 105, 0.404);
+}
+a {
+    color: hotpink;
+  }
