@@ -2,8 +2,7 @@ import * as THREE from 'three'
 import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import cubeglb from './assets/cube.glb'
-import bit0 from './assets/0-bit.png'
-import bit1 from './assets/1-bit.png'
+import Bit from './objects/Bit';
 
 export default function run() {
     const scene = new THREE.Scene()
@@ -58,23 +57,9 @@ export default function run() {
 
 
 
-    const bit0Texture = new THREE.TextureLoader().load(bit0)
-    const bit1Texture = new THREE.TextureLoader().load(bit1)
 
 
-    // matrix 0's and 1's
-    const addBit = () => {
-        const geometry = new THREE.PlaneGeometry(0.5, 0.5);
-        const material = new THREE.MeshStandardMaterial({map: Math.random() < 0.5 ? bit0Texture : bit1Texture, transparent: true})
-        const bit = new THREE.Mesh(geometry, material)
-        bit.material.side = THREE.DoubleSide;
-        const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(30))
-        bit.position.set(x, y, z)
-        scene.add(bit)
-
-    }
-
-    Array(250).fill().forEach(addBit)
+    let bits = Array(250).fill().map(() => new Bit(scene))
 
 
     let lt = new Date()
@@ -87,11 +72,14 @@ export default function run() {
 
 
 
+
         if (cube){
             cube.rotation.z += 0.005
             cube.rotation.y += 0.005
             cube.rotation.x += 0.005
         }
+
+        bits.forEach(bit => bit.update())
 
         controls.update(1 * secs);
 
