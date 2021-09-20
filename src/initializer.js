@@ -1,9 +1,13 @@
 import * as THREE from 'three'
 import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls'
 import  ObjectManager from './objects'
+import space from './assets/space.jpg'
 
 export default function run() {
     const scene = new THREE.Scene()
+    const loader = new THREE.TextureLoader();
+    const bgTexture = loader.load(space);
+    scene.background = bgTexture;
 
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 
@@ -40,22 +44,21 @@ export default function run() {
     const gridHelper = new THREE.GridHelper(100, 100)
     scene.add(gridHelper)
 
-    // const controls = new FirstPersonControls(camera, renderer.domElement)
-    // controls.lookSpeed = 0.15
+    const controls = new FirstPersonControls(camera, renderer.domElement)
+    controls.lookSpeed = 0.30
     // controls.lookVertical = false
-    // controls.movementSpeed = 3
-    // controls.domElement.addEventListener("mousemove", (e) => {
-    //     if (e.clientX >= 0.4 * window.innerWidth && e.clientX <= 0.6 * window.innerWidth) {
-    //         controls.activeLook = false
-    //     } else {
-    //         controls.activeLook = true
-    //     }
-    // })
-    camera.position.setZ(6)
-    camera.position.setX(1)
-    camera.position.setY(5)
-    camera.rotateY(0.7)
-    camera.rotateX(-0.5)
+    controls.movementSpeed = 3
+    controls.domElement.addEventListener("mousemove", (e) => {
+        if (e.clientX >= 0.4 * window.innerWidth && e.clientX <= 0.6 * window.innerWidth 
+            && e.clientY >= 0.45 * window.innerHeight && e.clientY <= 0.55 * window.innerHeight) {
+            controls.activeLook = false
+        } else {
+            controls.activeLook = true
+        }
+    })
+    camera.position.set(3, -7, -6)
+    camera.rotateY(3.9)
+    camera.rotateX(-0.6)
 
 
     // Objects and animation
@@ -73,20 +76,27 @@ export default function run() {
 
     let lt = new Date()
     function animate() {
-        var now = new Date(),
-            secs = (now - lt) / 1000;
-        lt = now;
+        // if (window.animate){
+            var now = new Date(),
+                secs = (now - lt) / 1000;
+            lt = now;
 
-        requestAnimationFrame(animate)
+            requestAnimationFrame(animate)
+    
+            // controls.update(secs)
+            
+            objManager.update()
+            objManager.updateCamera(camera)
 
-        objManager.update()
+            // console.log(camera.position);
 
-        // controls.update(1 * secs);
 
-        renderer.render(scene, camera)
+            renderer.render(scene, camera)
+        // }
     }
 
     animate()
+    renderer.render(scene, camera)
     return scene
 }
 

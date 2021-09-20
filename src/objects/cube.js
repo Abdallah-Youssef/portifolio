@@ -2,16 +2,16 @@ import * as THREE from 'three'
 import cubeglb from '../assets/cube.glb'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
-export default class Cube {
+class Cube{
     constructor(scene) {
+
         const loader = new GLTFLoader();
         loader.loadAsync(cubeglb)
         .then (glb => {
             this.cube = glb.scene
-            this.cube.position.setY(1)
+            this.cube.position.set(3, -12, 1)
             scene.add(this.cube);
         })
-
     }
 
     update(){
@@ -22,3 +22,5 @@ export default class Cube {
         }
     }
 }
+
+export default Cube

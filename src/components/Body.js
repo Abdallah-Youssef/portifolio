@@ -10,7 +10,7 @@ export const Body = () => {
                 </div>
             </div>
 
-            <div className={styles.story}>
+            <div className={styles.story} id="about">
                 <div className={styles.darkBackground}>
                     <p className={styles.lightGreen}>
                         I am a Computer Engineering student at the University of Alexandria graduating in 2023.
@@ -23,7 +23,7 @@ export const Body = () => {
                 </div>
             </div>
 
-            <div className={styles.story}>
+            <div className={styles.story} id="experiences">
                 <div className={styles.darkBackground}>
                     <h1 className={styles.title}> Experiences </h1>
 
