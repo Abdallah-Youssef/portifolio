@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/blender
 /.pnp
 .pnp.js
 
