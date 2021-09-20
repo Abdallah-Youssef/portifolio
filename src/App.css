@@ -1,13 +1,28 @@
 
 
-#bg{
+/* #canvasContainer
+{
+    position: absolute;
+    width: ;
+    z-index: 1;
+    background-color: Black;
+} */
+
+#bg
+{   
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
 }
 
+
+
 #main{
+    z-index: 2;
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     background-color: rgba(105, 105, 105, 0);

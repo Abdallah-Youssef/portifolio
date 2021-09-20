@@ -15,9 +15,18 @@ export default function run() {
     })
 
     renderer.setClearColor(0x0D0208);
-    // renderer.setClearColor( 0xFF0000);
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(window.innerWidth, window.innerHeight)
+    window.addEventListener('resize', onWindowResize, false);
+
+    function onWindowResize() {
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+    }
 
 
     // Lighting
@@ -41,6 +50,7 @@ export default function run() {
     //     }
     // })
     camera.position.setZ(6)
+    camera.position.setX(1)
     camera.position.setY(5)
     camera.rotateY(0.7)
     camera.rotateX(-0.5)
@@ -74,10 +84,6 @@ export default function run() {
         var now = new Date(),
             secs = (now - lt) / 1000;
         lt = now;
-
-        // const canvas = renderer.domElement;
-        // // look up the size the canvas is being displayed
-        // canvas.setAttribute("width", "100vw")
 
         requestAnimationFrame(animate)
 

@@ -12,6 +12,7 @@ function App() {
   return (
     <div id="App">
       <canvas id="bg"></canvas>
+
       <div id="main">
         <Nav/>
         <Body/>
