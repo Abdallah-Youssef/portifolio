@@ -21,16 +21,24 @@
     text-align: center;
 }
 
+
+
 .lightGreen {
   color: #00FF41ca;
   line-height: 1.7;
   font-size: 1.2em;
 }
 
+.brightGreen {
+  color: #00ff40ed;
+  font-weight: bold;
+}
+
 .experienceTitle{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 

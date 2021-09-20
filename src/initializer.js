@@ -1,8 +1,6 @@
 import * as THREE from 'three'
 import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import cubeglb from './assets/cube.glb'
-import Bit from './objects/Bit';
+import  ObjectManager from './objects'
 
 export default function run() {
     const scene = new THREE.Scene()
@@ -33,6 +31,10 @@ export default function run() {
     const ambientLight = new THREE.AmbientLight(0xffffff)
     scene.add(ambientLight)
 
+    const pointLight = new THREE.PointLight(0xffffff, 0.3)
+    pointLight.position.set(2, 2, 2)
+    scene.add(pointLight)
+
 
     // Prespective
     const gridHelper = new THREE.GridHelper(100, 100)
@@ -57,29 +59,19 @@ export default function run() {
 
 
     // Objects and animation
-    const loader = new GLTFLoader();
+    const objManager = new ObjectManager(scene)
+    objManager.loadObjects()
 
-    // Central cube
-    let cube
-    loader.load(cubeglb, function (gltf) {
-        cube = gltf.scene
-        cube.position.setY(1)
-        scene.add(cube);
-
-    }, undefined, error => console.error(error));
+    
 
 
 
 
 
-    let bits = Array(200).fill().map(() => new Bit(scene))
+    
 
 
     let lt = new Date()
-
-
-
-
     function animate() {
         var now = new Date(),
             secs = (now - lt) / 1000;
@@ -87,16 +79,7 @@ export default function run() {
 
         requestAnimationFrame(animate)
 
-
-
-
-        if (cube) {
-            cube.rotation.z += 0.005
-            cube.rotation.y += 0.005
-            cube.rotation.x += 0.005
-        }
-
-        bits.forEach(bit => bit.update())
+        objManager.update()
 
         // controls.update(1 * secs);
 

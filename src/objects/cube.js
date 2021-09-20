@@ -1,6 +1,24 @@
 import * as THREE from 'three'
+import cubeglb from '../assets/cube.glb'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
+export default class Cube {
+    constructor(scene) {
+        const loader = new GLTFLoader();
+        loader.loadAsync(cubeglb)
+        .then (glb => {
+            this.cube = glb.scene
+            this.cube.position.setY(1)
+            scene.add(this.cube);
+        })
 
-const geometry = new THREE.BoxGeometry()
-const material = new THREE.MeshStandardMaterial({color:'gray'})
-export const cube = new THREE.Mesh(geometry, material)
+    }
+
+    update(){
+        if (this.cube){
+            this.cube.rotation.z += 0.005
+            this.cube.rotation.y += 0.005
+            this.cube.rotation.x += 0.005
+        }
+    }
+}

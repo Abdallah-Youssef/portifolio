@@ -11,9 +11,12 @@ export default class Bit {
     constructor(scene) {
         this.scene = scene
         const geometry = new THREE.PlaneGeometry(0.5, 0.5);
-        const material = new THREE.MeshStandardMaterial({map: Math.random() < 0.5 ? bit0Texture : bit1Texture, transparent: true})
+        const material = new THREE.MeshStandardMaterial({
+            map: Math.random() < 0.5 ? bit0Texture : bit1Texture,
+            transparent: true,
+            side: THREE.DoubleSide})
+            
         this.bit = new THREE.Mesh(geometry, material)
-        this.bit.material.side = THREE.DoubleSide;
         const [x, y, z] = [rand(40), rand(10), rand(40)]
         this.bit.position.set(x, y, z)
 

@@ -8,6 +8,7 @@ import run from './initializer';
 function App() {
   useEffect(() => {
     run()
+    console.log("If you see any warning(s), it is because of this popular issue: https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   }, [])
   return (
     <div id="App">

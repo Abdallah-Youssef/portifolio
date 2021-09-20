@@ -33,25 +33,27 @@ export const Body = () => {
                     </div>
                     <ul className={styles.lightGreen}>
                         <li> 
-                            In summer of 2021, I attended an internship at Cegedim Egypt in Cairo. Cegedim is one of the biggest tech companies in the health care indutry.
+                            In summer of 2021, I attended an internship at Cegedim Egypt in Cairo. Cegedim is one of the biggest tech companies in the health care industry.
                         </li>
 
                         <li>
-                            Worked in an agile enviroment as a full stack developer using mainly React and the Spring Framework.
+                            Worked in an agile enviroment as a full stack developer.
                         </li>
 
                         <li>
-                            learned a lot about the software development life cycle and scrum ceremonies.
+                            Learned a lot about the software development life cycle and scrum ceremonies.
                         </li>
                         <li>
-                            Worked with a team to create a web app: <a href="https://github.com/TalaatHarb/cgdm-skills-matrix">Skills Matrix</a>. An app for companies to manage
-                            their employees and perform queries on them acorrding to attributes such as: skill, title, and team.
+                            Worked with a team to create a web app: <a href="https://github.com/TalaatHarb/cgdm-skills-matrix">Skills Matrix</a>; An employee managment web app.
+                        </li>
+                        <li>
+                            Technologies used: <span className={styles.brightGreen}>React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
                         </li>
                     </ul>
 
                     <div className={styles.experienceTitle}>
                         <h2> <i className={"fas fa-robot " + styles.icon}></i>Deep Learning</h2>
-                        <span>August 3 - September 14, 2021</span>
+                        <span>July 28 - September 18, 2021</span>
                     </div>
                     <ul className={styles.lightGreen}>
                         <li> 
@@ -84,7 +86,7 @@ export const Body = () => {
                             Created 4 web apps : &nbsp;
                             <a href="https://github.com/Abdallah-Youssef/MyReads">My Reads</a>,&nbsp;&nbsp;
                             <a href="https://github.com/Abdallah-Youssef/Would-You-Rather">Would you rather</a>,&nbsp;&nbsp;
-                            <a href="https://github.com/Abdallah-Youssef/TwitterClone">Twitter Clone</a>,&nbsp;&nbsp;
+                            <a href="https://github.com/Abdallah-Youssef/TwitterClone">Twitter Clone</a>, and&nbsp;&nbsp;
                             <a href="https://github.com/Abdallah-Youssef/Sentiment-Analysis-on-Articles-">Sentiment Analysis on Articles</a>.&nbsp;&nbsp;
 
                         </li>
