@@ -12,7 +12,7 @@ export default class ObjectManager {
     }
 
     loadObjects() {
-        this.objects.push(new Cube(this.scene))
+        // this.objects.push(new Cube(this.scene))
         this.objects.push(...Array(300).fill().map(() => new Bit(this.scene)))
         this.objects.push(new Sentinelle(this.scene))
 

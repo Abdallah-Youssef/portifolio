@@ -42,26 +42,31 @@
 }
 
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
 
-.card {
-    min-width: 200;
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
-  padding: 0.5rem;
-}
 
-.cardTitle{
-    color: rgb(255, 255, 255);
-}
 
 .icon{
     margin: 0px 0.5em;
 }
 
-a{
+.link{
     color: rgb(124, 168, 250);
+}
+
+.contactIcon{
+  color: white;
+  justify-self: center;
+  margin-right: 2em;
+}
+
+.contactGrid{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.4em;
+}
+
+.name{
+  justify-content: start;
 }

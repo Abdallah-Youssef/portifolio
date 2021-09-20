@@ -32,7 +32,7 @@ export const Body = () => {
                         <span>August 3 - September 14, 2021</span>
                     </div>
                     <ul className={styles.lightGreen}>
-                        <li> 
+                        <li>
                             In summer of 2021, I attended an internship at Cegedim Egypt in Cairo. Cegedim is one of the biggest tech companies in the health care industry.
                         </li>
 
@@ -44,7 +44,7 @@ export const Body = () => {
                             Learned a lot about the software development life cycle and scrum ceremonies.
                         </li>
                         <li>
-                            Worked with a team to create a web app: <a href="https://github.com/TalaatHarb/cgdm-skills-matrix">Skills Matrix</a>; An employee managment web app.
+                            Worked with a team to create a web app: <a className={styles.link} href="https://github.com/TalaatHarb/cgdm-skills-matrix">Skills Matrix</a>; An employee managment web app.
                         </li>
                         <li>
                             Technologies used: <span className={styles.brightGreen}>React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
@@ -56,7 +56,7 @@ export const Body = () => {
                         <span>July 28 - September 18, 2021</span>
                     </div>
                     <ul className={styles.lightGreen}>
-                        <li> 
+                        <li>
                             In summer of 2021, I enrolled in a college Deep Learning training camp.
                         </li>
 
@@ -74,8 +74,8 @@ export const Body = () => {
                         <span>July 2021 - September 2021</span>
                     </div>
                     <ul className={styles.lightGreen}>
-                        <li> 
-                            Completed the <a href="https://egfwd.com/">egFWD</a> Web Development Advanced Track.
+                        <li>
+                            Completed the <a className={styles.link} href="https://egfwd.com/">egFWD</a> Web Development Advanced Track.
                         </li>
 
                         <li>
@@ -84,10 +84,10 @@ export const Body = () => {
 
                         <li>
                             Created 4 web apps : &nbsp;
-                            <a href="https://github.com/Abdallah-Youssef/MyReads">My Reads</a>,&nbsp;&nbsp;
-                            <a href="https://github.com/Abdallah-Youssef/Would-You-Rather">Would you rather</a>,&nbsp;&nbsp;
-                            <a href="https://github.com/Abdallah-Youssef/TwitterClone">Twitter Clone</a>, and&nbsp;&nbsp;
-                            <a href="https://github.com/Abdallah-Youssef/Sentiment-Analysis-on-Articles-">Sentiment Analysis on Articles</a>.&nbsp;&nbsp;
+                            <a className={styles.link} href="https://github.com/Abdallah-Youssef/MyReads">My Reads</a>,&nbsp;&nbsp;
+                            <a className={styles.link} href="https://github.com/Abdallah-Youssef/Would-You-Rather">Would you rather</a>,&nbsp;&nbsp;
+                            <a className={styles.link} href="https://github.com/Abdallah-Youssef/TwitterClone">Twitter Clone</a>, and&nbsp;&nbsp;
+                            <a className={styles.link} href="https://github.com/Abdallah-Youssef/Sentiment-Analysis-on-Articles-">Sentiment Analysis on Articles</a>.&nbsp;&nbsp;
 
                         </li>
                     </ul>
@@ -95,29 +95,28 @@ export const Body = () => {
                 </div>
             </div>
 
+            <div className={styles.story} id="contact">
+                <div className={styles.darkBackground}>
+                    <h1 className={styles.title}> Contact </h1>
 
-            <div className={styles.story}>
-                {/* <div className={styles.darkBackground}>
-                    <div className={styles.grid}>
+                    <div className={styles.contactGrid}>
+                        <div className={styles.contactIcon}><i className="fas fa-envelope fa-3x"></i></div>
+                        <a  href='https://mail.google.com/mail/u/0/?fs=1&to=abdallah.yossf@gmail.com&tf=cm' target="_blank" className={styles.link}>abdallah.yossf@gmail.com</a>
 
-                        <div className={styles.card}>
-                            <h3 className={styles.cardTitle}> Skills Matrix </h3>
-                            <p className={styles.lightGreen}>
+                        <div className={styles.contactIcon}><i className="fab fa-github fa-3x"></i></div>
+                        <a href="https://github.com/Abdallah-Youssef" target="_blank" className={styles.link}>Abdallah-Youssef</a>
 
-                            </p>
-                        </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
-                        <div className={styles.card}> hello </div>
+                        <div className={styles.contactIcon}><i className="fab fa-linkedin fa-3x"></i></div>
+                        <a href="https://www.linkedin.com/in/abdallah-youssef-a9ab26194/" target="_blank" className={styles.link}>Abdallah Youssef</a>
                     </div>
-                </div> */}
+
+
+
+                </div>
             </div>
+
+
+
 
 
 
