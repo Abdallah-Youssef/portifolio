@@ -1,4 +1,3 @@
-import * as THREE from 'three'
 import sentinelleglb from '../assets/sentinelle.glb'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 

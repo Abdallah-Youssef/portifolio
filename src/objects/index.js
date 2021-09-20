@@ -1,4 +1,3 @@
-import Cube from './Cube';
 import Bit from './Bit';
 import Sentinelle from './Sentinelle';
 import Tube from './Tube';

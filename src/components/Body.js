@@ -101,13 +101,13 @@ export const Body = () => {
 
                     <div className={styles.contactGrid}>
                         <div className={styles.contactIcon}><i className="fas fa-envelope fa-3x"></i></div>
-                        <a  href='https://mail.google.com/mail/u/0/?fs=1&to=abdallah.yossf@gmail.com&tf=cm' target="_blank" className={styles.link}>abdallah.yossf@gmail.com</a>
+                        <a  rel="noreferrer" href='https://mail.google.com/mail/u/0/?fs=1&to=abdallah.yossf@gmail.com&tf=cm' target="_blank" className={styles.link}>abdallah.yossf@gmail.com</a>
 
                         <div className={styles.contactIcon}><i className="fab fa-github fa-3x"></i></div>
-                        <a href="https://github.com/Abdallah-Youssef" target="_blank" className={styles.link}>Abdallah-Youssef</a>
+                        <a rel="noreferrer" href="https://github.com/Abdallah-Youssef" target="_blank" className={styles.link}>Abdallah-Youssef</a>
 
                         <div className={styles.contactIcon}><i className="fab fa-linkedin fa-3x"></i></div>
-                        <a href="https://www.linkedin.com/in/abdallah-youssef-a9ab26194/" target="_blank" className={styles.link}>Abdallah Youssef</a>
+                        <a rel="noreferrer" href="https://www.linkedin.com/in/abdallah-youssef-a9ab26194/" target="_blank" className={styles.link}>Abdallah Youssef</a>
                     </div>
 
 

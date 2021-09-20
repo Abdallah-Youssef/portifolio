@@ -74,25 +74,11 @@ export default function run() {
     
 
 
-    let lt = new Date()
     function animate() {
-        // if (window.animate){
-            var now = new Date(),
-                secs = (now - lt) / 1000;
-            lt = now;
-
             requestAnimationFrame(animate)
-    
-            // controls.update(secs)
-            
             objManager.update()
             objManager.updateCamera(camera)
-
-            // console.log(camera.position);
-
-
             renderer.render(scene, camera)
-        // }
     }
 
     animate()
