@@ -41,8 +41,8 @@ export default function run() {
 
 
     // Prespective
-    const gridHelper = new THREE.GridHelper(100, 100)
-    scene.add(gridHelper)
+    // const gridHelper = new THREE.GridHelper(100, 100)
+    // scene.add(gridHelper)
 
     const controls = new FirstPersonControls(camera, renderer.domElement)
     controls.lookSpeed = 0.30
