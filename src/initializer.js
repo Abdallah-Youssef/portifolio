@@ -1,5 +1,4 @@
 import * as THREE from 'three'
-import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls'
 import  ObjectManager from './objects'
 import space from './assets/space.jpg'
 
@@ -41,21 +40,6 @@ export default function run() {
 
 
     // Prespective
-    // const gridHelper = new THREE.GridHelper(100, 100)
-    // scene.add(gridHelper)
-
-    const controls = new FirstPersonControls(camera, renderer.domElement)
-    controls.lookSpeed = 0.30
-    // controls.lookVertical = false
-    controls.movementSpeed = 3
-    controls.domElement.addEventListener("mousemove", (e) => {
-        if (e.clientX >= 0.4 * window.innerWidth && e.clientX <= 0.6 * window.innerWidth 
-            && e.clientY >= 0.45 * window.innerHeight && e.clientY <= 0.55 * window.innerHeight) {
-            controls.activeLook = false
-        } else {
-            controls.activeLook = true
-        }
-    })
     camera.position.set(3, -7, -6)
     camera.rotateY(3.9)
     camera.rotateX(-0.6)
@@ -68,12 +52,6 @@ export default function run() {
     
 
 
-
-
-
-    
-
-
     function animate() {
             requestAnimationFrame(animate)
             objManager.update()
@@ -82,7 +60,6 @@ export default function run() {
     }
 
     animate()
-    renderer.render(scene, camera)
     return scene
 }
 

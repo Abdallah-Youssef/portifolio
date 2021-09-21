@@ -1,0 +1,16 @@
+
+
+.experienceTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin: 0px 0.5em;
+}
+.brightGreen {
+  color: #00ff40ed;
+  font-weight: bold;
+}

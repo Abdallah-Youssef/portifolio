@@ -11,7 +11,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #00FF41;
+
+}
+
+.storyTitle {
+  font-size: 2.5rem;
+  color: #008f11;
+  text-align: center;
 }
 
 .darkBackground {
@@ -24,43 +30,16 @@
 
 
 
-.title{
-    font-size: 2.5rem;
-    color: #008F11;
-    text-align: center;
-}
-
-
-
-.lightGreen {
-  color: #00FF41ca;
-  line-height: 1.7;
-}
-
-
-.brightGreen {
-  color: #00ff40ed;
-  font-weight: bold;
-}
-
-.experienceTitle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
 
 
 
 
-.icon{
-    margin: 0px 0.5em;
-}
 
-.link{
-    color: rgb(124, 168, 250);
-}
+
+
+
+
 
 .contactIcon{
   color: white;
