@@ -11,7 +11,7 @@
   border-radius: 20px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   /* For mobile phones: */
   .nav {
     position: static;

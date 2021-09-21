@@ -1,7 +1,8 @@
 .pixelFont{
   font-family: 'Press Start 2P', cursive;
   line-height: 1.7em;
-  font-size: xx-large;
+  font-size: 1.2em;
+  padding: 0.5em;
 }
 
 .story {
@@ -11,7 +12,6 @@
   justify-content: center;
   align-items: center;
   color: #00FF41;
-  font-size: 1.2em;
 }
 
 .darkBackground {
@@ -21,8 +21,11 @@
   padding: 2em;
 }
 
+
+
+
 .title{
-    font-size: 2.5em;
+    font-size: 2.5rem;
     color: #008F11;
     text-align: center;
 }
@@ -32,8 +35,8 @@
 .lightGreen {
   color: #00FF41ca;
   line-height: 1.7;
-  font-size: 1.2em;
 }
+
 
 .brightGreen {
   color: #00ff40ed;
