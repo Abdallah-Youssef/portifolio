@@ -5,7 +5,13 @@ export const Body = () => {
         <div>
             <div className={styles.story}>
                 <div className={styles.darkBackground}>
-                    <h1> Welcome! I am Abdallah, an aspiring software engineer.</h1>
+                    
+                    <div className={styles.pixelFont}>
+                         Welcome! I am Abdallah, <br/>
+                         an aspiring software engineer.
+                         </div>
+                    
+                    <div></div>
                     <p className={styles.lightGreen}> The point of this website is to offer a brief introduction to my experience and goals as a software developer.</p>
                 </div>
             </div>
@@ -79,7 +85,7 @@ export const Body = () => {
                         </li>
 
                         <li>
-                            Studied JS es6, React, Redux, and Webpack.
+                            Studied Javascript ES6, React, Redux, and Webpack.
                         </li>
 
                         <li>

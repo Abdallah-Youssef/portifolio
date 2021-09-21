@@ -1,3 +1,9 @@
+.pixelFont{
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.7em;
+  font-size: xx-large;
+}
+
 .story {
   min-height: 100vh;
   display: flex;
