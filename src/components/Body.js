@@ -50,7 +50,7 @@ export const Body = () => {
                             Learned a lot about the software development life cycle and scrum ceremonies.
                         </li>
                         <li>
-                            Worked with a team to create a <a className={styles.link} href="https://github.com/TalaatHarb/cgdm-skills-matrix">Skills Matrix</a> web application, an employee management system.
+                            Worked with a team to create <a className={styles.link} href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</a>, an employee management system.
                         </li>
                         <li>
                             Technologies used: <span className={styles.brightGreen}>React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
