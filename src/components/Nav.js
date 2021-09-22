@@ -25,6 +25,7 @@ export const Nav = () => {
 
             <a className={styles.link} href="#experiences">Experiences</a>
 
+            <a className={styles.link} href="#work">Work</a>
 
             <a className={styles.link} href="#contact">Contact</a>
 

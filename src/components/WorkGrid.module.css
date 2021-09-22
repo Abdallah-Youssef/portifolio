@@ -1,0 +1,29 @@
+.grid{
+    display: grid;
+    min-width: 80vw;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    row-gap: 0.8em;
+    column-gap: 0.8em;
+}
+
+.card{
+    height: max-content;
+    padding: 1em;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #008f11;
+    border-radius: 0.5em;
+}
+
+.card h2 a{
+    color: #00ff40;
+}
+
+@media (max-width: 500px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .cardTitle{
+        font-size: large;
+    }
+}

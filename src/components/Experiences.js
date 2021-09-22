@@ -26,7 +26,7 @@ export const Experiences = () => {
                     Worked with a team to create <a className={styles.link} href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</a>, an employee management system.
                 </li>
                 <li>
-                    Technologies used: <span className={styles.brightGreen}>React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
+                    Technologies used: <span className="brightGreen">React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
                 </li>
             </ul>
 

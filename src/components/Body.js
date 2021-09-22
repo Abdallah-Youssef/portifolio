@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Body.module.css'
 import { Experiences } from './Experiences'
+import { WorkGrid } from './WorkGrid'
 export const Body = () => {
     return (
         <div>
@@ -34,6 +35,13 @@ export const Body = () => {
                 <div className={styles.darkBackground}>
                     <h1 className={styles.storyTitle}> Experiences </h1>
                     <Experiences />
+                </div>
+            </div>
+
+            <div className={styles.story} id="work">
+                <div className={styles.darkBackground}>
+                    <h1 className={styles.storyTitle}> Work </h1>
+                    <WorkGrid />
                 </div>
             </div>
 
