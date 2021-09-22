@@ -18,6 +18,10 @@
     color: #00ff40;
 }
 
+.card h2{
+    font-size: 1.3em;
+}
+
 @media (max-width: 500px){
     .grid{
         grid-template-columns: 1fr;

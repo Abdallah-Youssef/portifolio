@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Experiences.module.css'
-
+import { Link } from './Link'
 export const Experiences = () => {
     return (
         <div>
@@ -23,7 +23,7 @@ export const Experiences = () => {
                     Learned a lot about the software development life cycle and scrum ceremonies.
                 </li>
                 <li>
-                    Worked with a team to create <a className={styles.link} href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</a>, an employee management system.
+                    Worked with a team to create <Link href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</Link>, an employee management system.
                 </li>
                 <li>
                     Technologies used: <span className="brightGreen">React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
@@ -54,7 +54,7 @@ export const Experiences = () => {
             </div>
             <ul>
                 <li>
-                    Completed the <a className={styles.link} href="https://egfwd.com/">egFWD</a> Web Development Advanced Track.
+                    Completed the <Link href="https://egfwd.com/">egFWD</Link> Web Development Advanced Track.
                 </li>
 
                 <li>
@@ -63,10 +63,10 @@ export const Experiences = () => {
 
                 <li>
                     Created 4 web apps : &nbsp;
-                    <a className={styles.link} href="https://github.com/Abdallah-Youssef/MyReads">My Reads</a>,&nbsp;&nbsp;
-                    <a className={styles.link} href="https://github.com/Abdallah-Youssef/Would-You-Rather">Would you rather</a>,&nbsp;&nbsp;
-                    <a className={styles.link} href="https://github.com/Abdallah-Youssef/TwitterClone">Twitter Clone</a>, and&nbsp;&nbsp;
-                    <a className={styles.link} href="https://github.com/Abdallah-Youssef/Sentiment-Analysis-on-Articles-">Sentiment Analysis on Articles</a>.&nbsp;&nbsp;
+                    <Link href="https://github.com/Abdallah-Youssef/MyReads">My Reads</Link>,&nbsp;&nbsp;
+                    <Link href="https://github.com/Abdallah-Youssef/Would-You-Rather">Would you rather</Link>,&nbsp;&nbsp;
+                    <Link href="https://github.com/Abdallah-Youssef/TwitterClone">Twitter Clone</Link>, and&nbsp;&nbsp;
+                    <Link href="https://github.com/Abdallah-Youssef/Sentiment-Analysis-on-Articles-">Sentiment Analysis on Articles</Link>.&nbsp;&nbsp;
 
                 </li>
             </ul>

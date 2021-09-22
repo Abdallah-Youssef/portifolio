@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from './Link'
+import { LinkWithIcon } from './LinkWithIcon'
 import styles from './WorkGrid.module.css'
 
 export const WorkGrid = () => {
@@ -7,7 +7,7 @@ export const WorkGrid = () => {
         <div className={styles.grid}>
             <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
-                    <Link href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</Link>
+                    <LinkWithIcon href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</LinkWithIcon>
                 </h2>
                 <ul>
                     <li>
@@ -21,7 +21,7 @@ export const WorkGrid = () => {
 
             <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
-                    <Link href="https://github.com/Abdallah-Youssef/Would-You-Rather">Would You Rather</Link>
+                    <LinkWithIcon href="https://github.com/Abdallah-Youssef/Would-You-Rather">Would You Rather</LinkWithIcon>
                     
                     </h2>
                 <ul>
@@ -36,7 +36,7 @@ export const WorkGrid = () => {
 
             <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
-                    <Link href="https://github.com/Abdallah-Youssef/Language-Parser-with-JavaCC">JavaCC Language Parser</Link>
+                    <LinkWithIcon href="https://github.com/Abdallah-Youssef/Language-Parser-with-JavaCC">JavaCC Language Parser</LinkWithIcon>
                 </h2>
                 <ul>
                     <li>
@@ -50,7 +50,7 @@ export const WorkGrid = () => {
             </div>
             <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
-                    <Link href="https://github.com/Abdallah-Youssef/MyReads">My Reads</Link>
+                    <LinkWithIcon href="https://github.com/Abdallah-Youssef/MyReads">My Reads</LinkWithIcon>
                 </h2>
                 <ul>
                     <li>
@@ -64,7 +64,7 @@ export const WorkGrid = () => {
 
             <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
-                    <Link href="https://github.com/Abdallah-Youssef/Sentiment-Analysis-on-Articles-">Sentiment Analysis on Articles</Link>
+                    <LinkWithIcon href="https://github.com/Abdallah-Youssef/Sentiment-Analysis-on-Articles-">Sentiment Analysis on Articles</LinkWithIcon>
                 </h2>
                 <ul>
                     <li>
@@ -78,7 +78,7 @@ export const WorkGrid = () => {
 
             <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
-                    <Link href="https://github.com/Abdallah-Youssef/Movies">Movies App</Link>
+                    <LinkWithIcon href="https://github.com/Abdallah-Youssef/Movies">Movies App</LinkWithIcon>
                 </h2>
 
                 <ul>
