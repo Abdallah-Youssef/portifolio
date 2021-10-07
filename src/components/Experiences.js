@@ -23,7 +23,7 @@ export const Experiences = () => {
                     Learned a lot about the software development life cycle and scrum ceremonies.
                 </li>
                 <li>
-                    Worked with a team to create <Link href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</Link>, an employee management system.
+                    Worked with a team to create the "Cegedim Skills Matrix", an employee management system.
                 </li>
                 <li>
                     Technologies used: <span className="brightGreen">React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
