@@ -12,7 +12,7 @@ export const Experiences = () => {
             </div>
             <ul>
                 <li>
-                    In summer of 2021, I attended an internship at Cegedim Egypt in Cairo. Cegedim is one of the biggest tech companies in the health care industry.
+                    In summer of 2021, I attended an internship at Cegedim Egypt in Cairo. Cegedim is one of the leading tech companies in the health care industry.
                 </li>
 
                 <li>
@@ -21,9 +21,6 @@ export const Experiences = () => {
 
                 <li>
                     Learned a lot about the software development life cycle and scrum ceremonies.
-                </li>
-                <li>
-                    Worked with a team to create the "Cegedim Skills Matrix", an employee management system.
                 </li>
                 <li>
                     Technologies used: <span className="brightGreen">React, Jest, Spring (Boot, Data JPA, Security), Git, and Docker.</span>
