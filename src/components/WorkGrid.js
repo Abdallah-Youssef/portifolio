@@ -7,7 +7,7 @@ export const WorkGrid = () => {
         <div className={styles.grid}>
             <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
-                    <LinkWithIcon href="https://github.com/TalaatHarb/cgdm-skills-matrix">Cegedim Skills Matrix</LinkWithIcon>
+                    Cegedim Skills Matrix
                 </h2>
                 <ul>
                     <li>
