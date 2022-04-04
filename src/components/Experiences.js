@@ -7,7 +7,7 @@ export const Experiences = () => {
            
 
             <div className={styles.experienceTitle}>
-                <h2> <i className={"fas fa-laptop-medical " + styles.icon}></i> Cegedim </h2>
+                <h2> <i className={"fas fa-laptop-medical " + styles.icon}></i>Cegedim</h2>
                 <span>August 3 - September 14, 2021</span>
             </div>
             <ul>
