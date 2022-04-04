@@ -26,11 +26,9 @@ function App() {
                 <Nav />
                 <Body />
                 <Footer />
+                <button onClick={handleClick}>Press me</button>
+                <div>{result}</div>
             </div>
-
-
-            <button onClick={handleClick}>Press me</button>
-            <div>{result}</div>
         </div>
     );
 }
