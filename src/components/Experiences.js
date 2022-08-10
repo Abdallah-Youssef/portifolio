@@ -5,6 +5,21 @@ export const Experiences = () => {
     return (
         <div>
            
+            <div className={styles.experienceTitle}>
+          <h2> <i className={"fa-brands fa-meta " + styles.icon}></i>Meta</h2>
+                <span>July 25 - October 14, 2022</span>
+            </div>
+            <ul>
+                <li>
+                    In summer of 2022, I joined Meta London as a software engineering intern.
+                </li>
+                <li>
+                    I worked on testing frameworks and infrastructure.
+                </li>
+                <li>
+                    Programming languages used: <span className="brightGreen">TypeScript, Rust, Hacklang.</span>
+                </li>
+            </ul>
 
             <div className={styles.experienceTitle}>
                 <h2> <i className={"fas fa-laptop-medical " + styles.icon}></i>Cegedim</h2>

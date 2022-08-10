@@ -6,6 +6,26 @@ export const WorkGrid = () => {
     return (
         <div className={styles.grid}>
             <div className={styles.card}>
+              <h2 className={styles.cardTitle}>
+            <LinkWithIcon href="https://github.com/Abdallah-Youssef/Health-Monitoring-System">Health Monitoring System</LinkWithIcon>
+                    </h2>
+              <ul>
+                <li>
+                  Big Data System that uses the Hadoop Distributed File System and MapReduce to process large amounts of health data from micro services.
+                </li>
+               <li>
+                  Created Dockerfiles for Hadoop, different Golang servers, and a Django web server.
+                </li>
+               <li>
+                  Configured docker swarm and an overlay network to start the containers and connect them.
+                </li>
+                <li>
+                  Technologies/Libraries used:  <span className="brightGreen">HDFS, MapReduce, Docker, Golang.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.card}>
                 <h2 className={styles.cardTitle}>
                     Cegedim Skills Matrix
                 </h2>
